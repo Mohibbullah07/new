@@ -1,0 +1,141 @@
+/* Reset code and common start here */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  outline: none;
+  font-weight: 400;
+}
+
+html {
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  width: 100rem;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+/* Reset code and common end here */
+
+/* header styles code start here */
+
+#blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 2rem 1rem;
+  min-height: 5vh;
+}
+
+.logo-figure {
+  border: 1px solid white;
+}
+.logo {
+  font-size: 4rem;
+}
+#nav-container {
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li {
+  padding: 1rem;
+  transition: all 0.4s;
+}
+
+nav ul li:hover {
+  background-color: brown;
+  border-radius: 0.6rem;
+}
+
+.nav__link {
+  font-size: 1.8rem;
+  color: white;
+}
+/* header styles code end here */
+
+/* banner styles code start from here */
+
+.bannger__section {
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  min-height: 95vh;
+}
+.banner__heading {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.banner__description {
+  font-size: 1.3rem;
+}
+
+#banner__img {
+  width: 100%;
+}
+
+.article__container {
+  flex-basis: 50%;
+}
+.banner__img__container {
+  flex-basis: 50%;
+}
+/* banner styles code ends here */
+
+/* Responsive Styles code start from here */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 55%;
+  }
+  .bannger__section {
+    flex-direction: column;
+    min-width: auto;
+  }
+  .banner__description {
+    font-size: 2rem;
+  }
+  .article__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45.5%;
+  }
+  #blog-header {
+    flex-direction: column;
+  }
+  #nav-container {
+    flex-direction: column;
+    padding-left: 2.5rem;
+  }
+  .banner__img {
+    width: 100%;
+  }
+}
+/* Responsive Styles code end here */
